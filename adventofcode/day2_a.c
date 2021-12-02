@@ -25,21 +25,17 @@ int main() {
 
     //foward
     if(buffer[0] == 'f'){
-        printf("\n buffer: %s", &buffer[8]);
         current_horizontal += atoi(&buffer[8]);
-        printf("\n %d", current_horizontal);
-
      } 
+        
      //down
      else if (buffer[0] == 'd'){
         current_depth += atoi(&buffer[5]);
-        printf("\n %d", current_depth);
-
      } 
+        
      //up 
      else if (buffer[0] == 'u'){
         current_depth -= atoi(&buffer[3]);
-        printf("\n %d", current_depth);
      } 
     
      }
