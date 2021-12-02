@@ -5,7 +5,7 @@
 
 int main() {
 
-    char *filename = "day1_data.txt"; //input data in txt file
+    char *filename = "day1_data.txt"; 	   //input data in txt file
     FILE *fp = fopen(filename, "r");       //open file in read mode
 
     if (fp == NULL)
@@ -13,14 +13,6 @@ int main() {
         printf("Error: could not open file %s", filename);
         return 1;
     }
-
-    /*
-    char * fgets( char * str, int size, FILE * stream );
-
-    str: Ein char-Array, in welches der String geschrieben werden soll.
-	size: Größe des String-Buffers str. fgets() liest damit maximal size-1 Zeichen und fügt ein Nullbyte an.
-	stream: Stream, aus dem der String gelesen werden soll
-    */
 
     // reading line by line, max 256 bytes
     const unsigned MAX_LENGTH = 256;
