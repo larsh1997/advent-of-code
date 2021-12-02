@@ -14,15 +14,6 @@ int main() {
         return 1;
     }
 
-    /*
-    char * fgets( char * str, int size, FILE * stream );
-
-    str: Ein char-Array, in welches der String geschrieben werden soll.
-    size: Größe des String-Buffers str. fgets() liest damit maximal size-1 Zeichen und fügt ein Nullbyte an.
-    stream: Stream, aus dem der String gelesen werden soll
-    */
-
-    // reading line by line, max 256 bytes
     const unsigned MAX_LENGTH = 256;
     char buffer[MAX_LENGTH];
     int value[1999]; 
@@ -35,16 +26,13 @@ int main() {
          i++; //Note: i increments to 2000 therefore the array size must be 1999, else this will not work
     }
 
-
-
-
     int value_a;
     int value_b;
 
     for(int j = 0; j < sizeof(value)/sizeof(int); j++){
 
         if(j+3 > sizeof(value)/sizeof(int)){
-            printf("\n %d", amount_increases);
+            printf("\n %d", amount_increases); //result
         } else {
             value_a = value[j] + value[j+1] + value[j+2];
             value_b = value[j+1] + value[j+2] + value[j+3];
@@ -54,9 +42,8 @@ int main() {
         }
     }
 
-    printf("\n %d", amount_increases);
+    printf("\n %d", amount_increases); //result
         }
-
 
     // close the file
     fclose(fp);
