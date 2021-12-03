@@ -93,11 +93,7 @@ Converts a binary number, where each digit is stored in an single array cell to 
 int binaryToInteger(int *arr, int arraySize){
 
     int result = 0;
-   
-    char str[2];
-    int val = 0;
-  
-            
+
     for(int k = 0; k < arraySize; k++){
         result += (arr[k] * (int)pow(2,(arraySize-k-1)));
     }
