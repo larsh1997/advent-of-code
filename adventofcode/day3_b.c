@@ -15,7 +15,7 @@ int main() {
 
     FILE *fp = fopen("day3_data.txt", "r+");            //open file in read+ mode
     FILE *fp_tmp = fopen("day3_tmp.txt", "r+");         //temporary txt file 
-    const int arraySize = 12;                           //12 digits binary numbers a given in the day 3 data
+    const int arraySize = 12;                           //12 digits binary numbers are given in the day 3 data
     int firstNumber[arraySize];                         //Stores the gamma value as a binary number
     int most_common_bit; 
     char *a;
