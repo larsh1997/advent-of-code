@@ -35,7 +35,7 @@ int main() {
 
     int line_counter = 0;
         for (int i = 0; i < 12; i++){ 
-        // while ( i<12){
+     
 
            while (fgets(buffer, MAX_LENGTH, fp) != NULL){
             a = buffer;
