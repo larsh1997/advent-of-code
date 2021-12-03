@@ -78,7 +78,6 @@ int binaryToInteger(int *arr, int sizeOf_array){
     int result = 0;
     for(int k = 0; k < sizeOf_array; k++){
         result += arr[k] * pow(2,(sizeOf_array-k-1));
-        printf("arr[k] %d und pow %d und reuslt %d \n",arr[k], (int)pow(2,(sizeOf_array-k-1)), result );
     }
     return result;
 
